@@ -141,6 +141,10 @@
 	item_color = "hydroponics"
 	permeability_coefficient = 0.5
 
+
+// honk start -- adding hydroponics skirt
+
+
 /obj/item/clothing/under/russ/rank/hydroponics/skirt
 	name = "botanist's jumpskirt"
 	desc = "A botanist's jumpskirt, provides the freedom botanist's desire" //if you want a better description make it
@@ -150,6 +154,8 @@
 	permeability_coefficient = 0.5 //dunno but its on the botany jumpsuit
 	body_parts_covered = CHEST|GROIN|ARMS
 	can_adjust = FALSE
+
+// honk end
 
 /obj/item/clothing/under/rank/janitor
 	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
