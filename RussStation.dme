@@ -2840,6 +2840,7 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "russstation\code\game\objects\items\storage\boxes.dm"
+#include "russstation\code\game\objects\items\storage\storage.dm"
 #include "russstation\code\modules\clothing\clothing.dm"
 #include "russstation\code\modules\food_and_drinks\food\snacks_meat.dm"
 #include "russstation\code\modules\food_and_drinks\recipes\processor_recipes.dm"

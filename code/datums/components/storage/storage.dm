@@ -125,7 +125,7 @@
 	if (can_hold_list != null)
 		can_hold = typecacheof(can_hold_list)
 
-	if (cant_hold_list != null)	
+	if (cant_hold_list != null)
 		cant_hold = typecacheof(cant_hold_list)
 
 /datum/component/storage/proc/generate_hold_desc(can_hold_list)
@@ -390,6 +390,9 @@
 	M.client.screen |= real_location.contents
 	M.active_storage = src
 	LAZYOR(is_using, M)
+	if(istype(real_location, /obj/item/storage)) //Russtation - Clown's self-closing box.
+		var/obj/item/storage/S = real_location
+		S.on_open(M)
 	return TRUE
 
 /datum/component/storage/proc/hide_from(mob/M)
@@ -402,6 +405,9 @@
 	if(M.active_storage == src)
 		M.active_storage = null
 	LAZYREMOVE(is_using, M)
+	if(istype(real_location, /obj/item/storage)) //Russtation - Clown's self-closing box.
+		var/obj/item/storage/S = real_location
+		S.on_close(M)
 	return TRUE
 
 /datum/component/storage/proc/close(mob/M)
