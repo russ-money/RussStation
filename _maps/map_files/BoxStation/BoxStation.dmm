@@ -12361,9 +12361,6 @@
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet)
 "aCf" = (
-/obj/machinery/camera{
-	c_tag = "Theatre Storage"
-	},
 /obj/structure/closet/secure_closet/freezer/cream_pie,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -13360,6 +13357,7 @@
 	dir = 2;
 	sortType = 18
 	},
+/obj/structure/chair/stool,
 /turf/open/floor/plasteel/white/side{
 	dir = 1
 	},
@@ -56524,6 +56522,9 @@
 /obj/item/lipstick/random{
 	pixel_x = -2;
 	pixel_y = -2
+	},
+/obj/machinery/camera{
+	c_tag = "Theatre Storage"
 	},
 /turf/open/floor/plasteel/white/side,
 /area/crew_quarters/theatre)
